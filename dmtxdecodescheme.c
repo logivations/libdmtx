@@ -130,7 +130,7 @@ GetEncodationScheme(unsigned char cw)
 static void
 PushOutputWord(DmtxMessage *msg, int value)
 {
-   assert(value >= 0 && value < 256);
+   //assert(value >= 0 && value < 256);
 
    msg->output[msg->outputIdx++] = (unsigned char)value;
 }
